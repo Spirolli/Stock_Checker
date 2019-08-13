@@ -18,7 +18,7 @@
     <div id='userstories' style='margin-left: 5%; margin-top: 5%'>
       <h3>User Stories</h3>
       <ol>
-        <li>Set the content security policies to only allow loading of scripts and css from your server.</li>
+        <li>Set the content security policies to only allow loading of scripts and css from your server. &#10003</li>
         <li>I can <b>GET</b> <code>/api/stock-prices</code> with form data containing a Nasdaq <i>stock</i> ticker and recieve back an object <i>stockData</i>.</li>
         <li>In <i>stockData</i>, I can see the <i>stock</i>(string, the ticker), <i>price</i>(decimal in string format), and <i>likes</i>(int).</li>
         <li>I can also pass along field <i>like</i> as <b>true</b>(boolean) to have my like added to the stock(s). Only 1 like per ip should be accepted.</li>
@@ -35,8 +35,21 @@
       <code>{"stockData":{"stock":"GOOG","price":"786.90","likes":1}}</code><br>
       <code>{"stockData":[{"stock":"MSFT","price":"62.30","rel_likes":-1},{"stock":"GOOG","price":"786.90","rel_likes":1}]}</code>
     </div>
-    <hr style='margin: 50px'>
-    <div id='testui' style='margin-left: 5%'>
+    <hr style="margin: 50px">
+    <div id="testui" style="margin-left: 5%">
+      <blockquote style="font-size: 10pt">
+        Due to google barring automated requests, only a limited number of stocks are available:
+        <ul style="font-size: 8pt;">
+          <li>MSFT  (Microsoft)</li>
+          <li>GOOG  (Google)</li>
+          <li>ATVI  (Activision Blizzard Inc.)</li>
+          <li>FB    (Facebook Inc., Common Stock)</li>
+          <li>ROKU  (Roku Inc.)</li>
+          <li>AAPL  (Apple Inc.)</li>
+          <li>PG    (Proctor & Gamble Co)</li>
+        </ul>
+        Prices returned reflect the date were queried: August 12, 2019
+      </blockquote>
       <h2 style="text-align: left">Front-End:</h2>
       <h3>Get single price and total likes</h3>
       <form id="testForm2" class="border">
